@@ -12,7 +12,7 @@ import UIKit
 enum Type: String {
     case bug
     case poison
-    case electrik
+    case electric
     case fire
     case water
     case grass
@@ -36,7 +36,7 @@ enum Type: String {
             return UIImage(named :"poison")
         case .dragon:
             return UIImage(named :"dragon")
-        case .electrik:
+        case .electric:
             return UIImage(named :"electric")
         case .fairy:
             return UIImage(named :"fairy")
@@ -75,7 +75,7 @@ enum Type: String {
             return "poison"
         case .dragon:
             return "dragon"
-        case .electrik:
+        case .electric:
             return "electric"
         case .fairy:
             return "fairy"
