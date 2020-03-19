@@ -107,41 +107,96 @@ enum Type: String {
     }
     
     func getWeakness() -> [Type]{
-        switch self{
-        case .bug:
-        return [.fire, .rock, .flying]
-        case .poison:
-        return [.psychic,.ground]
-        case .dragon:
-            return [.ice,.dragon,.fairy]
-        case .electric:
-            return [.ground]
-        case .fairy:
-            return [.poison,.steel]
-        case .fighting:
-            return [.psychic,.flying,.fairy]
-        case .fire:
-            return [.water,.ground,.rock]
-        case .flying:
-            return [.electric,.rock,.ice]
-        case .ghost:
-            return [.ghost]
-        case .steel:
-            return [.fighting,.fire,.ground]
-        case .normal:
-            return [.fighting]
-        case .ice:
-            return [.fire,.fighting,.steel,.rock]
-        case .ground:
-            return [.water,.grass]
-        case .grass:
-            return [.fire,.ice,.bug,.poison,.flying]
-        case .water:
-            return [.electric, .grass]
-        case .psychic:
-            return [.ghost]
-        case .rock:
-            return [.water, .grass, .ground, .steel]
+        switch self {
+            case .bug:
+                return [.fire, .rock, .flying]
+            case .poison:
+                return [.psychic,.ground]
+            case .dragon:
+                return [.ice,.dragon,.fairy]
+            case .electric:
+                return [.ground]
+            case .fairy:
+                return [.poison,.steel]
+            case .fighting:
+                return [.psychic,.flying,.fairy]
+            case .fire:
+                return [.water,.ground,.rock]
+            case .flying:
+                return [.electric,.rock,.ice]
+            case .ghost:
+                return [.ghost]
+            case .steel:
+                return [.fighting,.fire,.ground]
+            case .normal:
+                return [.fighting]
+            case .ice:
+                return [.fire,.fighting,.steel,.rock]
+            case .ground:
+                return [.water,.grass]
+            case .grass:
+                return [.fire,.ice,.bug,.poison,.flying]
+            case .water:
+                return [.electric, .grass]
+            case .psychic:
+                return [.ghost]
+            case .rock:
+                return [.water, .grass, .ground, .steel]
+            }
+    }
+    
+    func getStength() -> [Type]{
+        switch self {
+            case .bug:
+                return [.fighting, .grass, .ground]
+            case .poison:
+                return [.fighting, .fairy, .bug, .grass, .poison]
+            case .dragon:
+                return [.dragon, ]
+            case .electric:
+                return [.water, .electric, .fire, .grass]
+            case .fairy:
+                return [.fighting, .bug]
+            case .fighting:
+                return [.bug, .rock]
+            case .fire:
+                return [.steel, .fairy, .fire, .ice, .bug, .grass]
+            case .flying:
+                return [.fighting, .bug, .grass]
+            case .ghost:
+                return [.bug, .poison]
+            case .steel:
+                return [.steel, .dragon, .fairy, .ice, .bug, .normal, .grass, .psychic, .rock, .flying]
+            case .ice:
+                return [.ice]
+            case .ground:
+                return [.poison, .rock]
+            case .grass:
+                return [.water, .electric, .grass, .ground]
+            case .water:
+                return [.water, .steel, .fire, .ice]
+            case .psychic:
+                return [.fighting, .psychic]
+            case .rock:
+                return [.fire, .normal, .poison, .flying]
+            }
+    }
+    
+    func getImmunity() -> [Type]{
+        switch self {
+            case .normal:
+                return [.ghost]
+            case .fairy:
+                return [.dragon]
+            case .flying:
+                return [.ground]
+            case .ghost:
+                return [.fighting, .normal]
+            case .steel:
+                return [.poison]
+            case .ground:
+                return [.electric]
         }
     }
+
 }
