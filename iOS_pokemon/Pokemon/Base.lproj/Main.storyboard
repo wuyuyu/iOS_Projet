@@ -204,6 +204,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8EI-UW-YLM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="lLG-Ur-2G3">
+                                        <barButtonItem key="rightBarButtonItem" title="Calculator" id="PMU-fZ-y8m"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -243,11 +252,42 @@
                         <outlet property="tableView" destination="1i2-9C-wAR" id="QgR-9v-ZDH"/>
                         <outlet property="type1View" destination="wyx-68-tSE" id="9lk-Ja-zAZ"/>
                         <outlet property="type2View" destination="dAc-l4-x0Z" id="iV1-NJ-W1s"/>
+                        <segue destination="bA8-ft-LWi" kind="presentation" identifier="openCalculator" id="gdj-wp-BXr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1g2-bJ-xji" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1860" y="26.53673163418291"/>
+            <point key="canvasLocation" x="1814" y="27"/>
+        </scene>
+        <!--Calculator View Controller-->
+        <scene sceneID="g1H-t4-5lo">
+            <objects>
+                <viewController id="bA8-ft-LWi" customClass="CalculatorViewController" customModule="Pokemon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B83-Gn-bii">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H7R-nF-XLn">
+                                <rect key="frame" x="0.0" y="292" width="375" height="355"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="H7R-nF-XLn" firstAttribute="bottom" secondItem="W2V-Yj-ZsF" secondAttribute="bottom" id="1Mb-IL-Jcm"/>
+                            <constraint firstItem="H7R-nF-XLn" firstAttribute="centerX" secondItem="B83-Gn-bii" secondAttribute="centerX" id="Cxx-j2-Pdt"/>
+                            <constraint firstItem="H7R-nF-XLn" firstAttribute="leading" secondItem="W2V-Yj-ZsF" secondAttribute="leading" id="Pk4-6Q-hg7"/>
+                            <constraint firstItem="H7R-nF-XLn" firstAttribute="top" secondItem="W2V-Yj-ZsF" secondAttribute="top" constant="292" id="S8E-wB-YWT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="W2V-Yj-ZsF"/>
+                    </view>
+                    <connections>
+                        <outlet property="CalculatorView" destination="H7R-nF-XLn" id="yOB-w2-UAa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BGt-zS-SH5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2589.5999999999999" y="26.53673163418291"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UWt-hM-HmC">

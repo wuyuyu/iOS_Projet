@@ -40,6 +40,7 @@ class PokemonDetailsViewController: UIViewController {
             }
     }
         setUpPokemonType(type: pokemon.types)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Calculator", style: .plain, target: self, action: #selector(openCalculator))
 }
     
     private var typeImageView : UIImageView!
@@ -52,6 +53,14 @@ class PokemonDetailsViewController: UIViewController {
             type2View.image = type[1].getIcon()
             labelType2.text = type[1].getTypeName()
         }
+    }
+    
+    @objc private func openCalculator(){
+        view.addAnimatedOverlay()
+        UIView.animate(withDuration: 0.3) {
+          self.navigationController?.navigationBar.alpha = 0.33
+        }
+        performSegue(withIdentifier: "openCalculator", sender: self)
     }
     
 }

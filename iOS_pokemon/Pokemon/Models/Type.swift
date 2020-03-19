@@ -105,4 +105,43 @@ enum Type: String {
             return "rock"
         }
     }
+    
+    func getWeakness() -> [Type]{
+        switch self{
+        case .bug:
+        return [.fire, .rock, .flying]
+        case .poison:
+        return [.psychic,.ground]
+        case .dragon:
+            return [.ice,.dragon,.fairy]
+        case .electric:
+            return [.ground]
+        case .fairy:
+            return [.poison,.steel]
+        case .fighting:
+            return [.psychic,.flying,.fairy]
+        case .fire:
+            return [.water,.ground,.rock]
+        case .flying:
+            return [.electric,.rock,.ice]
+        case .ghost:
+            return [.ghost]
+        case .steel:
+            return [.fighting,.fire,.ground]
+        case .normal:
+            return [.fighting]
+        case .ice:
+            return [.fire,.fighting,.steel,.rock]
+        case .ground:
+            return [.water,.grass]
+        case .grass:
+            return [.fire,.ice,.bug,.poison,.flying]
+        case .water:
+            return [.electric, .grass]
+        case .psychic:
+            return [.ghost]
+        case .rock:
+            return [.water, .grass, .ground, .steel]
+        }
+    }
 }

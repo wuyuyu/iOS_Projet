@@ -26,6 +26,8 @@
 		3FEA8A302231B2C200CB1B9F /* PokemonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA8A2F2231B2C200CB1B9F /* PokemonTableViewCell.swift */; };
 		3FEA8A332231B53600CB1B9F /* PokemonTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA8A322231B53600CB1B9F /* PokemonTableViewCellViewModel.swift */; };
 		704283CC2E950043F31BADBA /* Pods_Pokemon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B358D564B9BB82285771A3C5 /* Pods_Pokemon.framework */; };
+		8D1A72622423D2E400273B73 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1A72612423D2E400273B73 /* UIView.swift */; };
+		8D1A72642423D3AA00273B73 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1A72632423D3AA00273B73 /* CalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		3FEA8A2F2231B2C200CB1B9F /* PokemonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTableViewCell.swift; sourceTree = "<group>"; };
 		3FEA8A322231B53600CB1B9F /* PokemonTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PokemonTableViewCellViewModel.swift; path = Pokemon/PokemonTableViewCellViewModel.swift; sourceTree = SOURCE_ROOT; };
 		8C288FCF568D11F2ECC64BC5 /* Pods-Pokemon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokemon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pokemon/Pods-Pokemon.debug.xcconfig"; sourceTree = "<group>"; };
+		8D1A72612423D2E400273B73 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		8D1A72632423D3AA00273B73 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		B358D564B9BB82285771A3C5 /* Pods_Pokemon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokemon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AEF03F2D915B5D6455C154 /* Pods-Pokemon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokemon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pokemon/Pods-Pokemon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +119,7 @@
 			children = (
 				3F4A9E0D222AE81B00DE0E23 /* PokedexViewController.swift */,
 				3F1809802247D6AF00B367E9 /* PokemonDetailsViewController.swift */,
+				8D1A72632423D3AA00273B73 /* CalculatorViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 		3F4A9E10222AE83200DE0E23 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8D1A72612423D2E400273B73 /* UIView.swift */,
 				3FEA8A2F2231B2C200CB1B9F /* PokemonTableViewCell.swift */,
 			);
 			path = Views;
@@ -308,6 +314,7 @@
 			files = (
 				3F4A9E0E222AE81B00DE0E23 /* PokedexViewController.swift in Sources */,
 				3F1809812247D6AF00B367E9 /* PokemonDetailsViewController.swift in Sources */,
+				8D1A72642423D3AA00273B73 /* CalculatorViewController.swift in Sources */,
 				3FEA8A302231B2C200CB1B9F /* PokemonTableViewCell.swift in Sources */,
 				3F4A9E15222AF22100DE0E23 /* Pokemon.swift in Sources */,
 				3F4A9E1B222B26D100DE0E23 /* JSONParser.swift in Sources */,
@@ -316,6 +323,7 @@
 				3F18098D2248032F00B367E9 /* PokemonEvolutionsTableViewCellViewModel.swift in Sources */,
 				3F0E74312267C6A200F3DDD5 /* APIError.swift in Sources */,
 				3F4A9DF7222ACFB000DE0E23 /* AppDelegate.swift in Sources */,
+				8D1A72622423D2E400273B73 /* UIView.swift in Sources */,
 				3F4A9E17222B1B7200DE0E23 /* Evolution.swift in Sources */,
 				3F18098B224802AD00B367E9 /* Constants.swift in Sources */,
 				3FEA8A332231B53600CB1B9F /* PokemonTableViewCellViewModel.swift in Sources */,
