@@ -101,7 +101,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "44EBCCCF-B615-4C39-9DCF-5D6FF6E8FFE9"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pokemon/Controllers/PokedexViewController.swift"
@@ -117,7 +117,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "5CFBDAC5-95A1-4500-9523-6C0B1E56133B"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pokemon/Controllers/PokedexViewController.swift"
@@ -133,7 +133,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "9AC68F71-51B9-4EDC-A30A-3A437DBD123A"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pokemon/Controllers/PokedexViewController.swift"
@@ -157,8 +157,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
             endingLineNumber = "18"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            landmarkName = "PokemonDetailsViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
