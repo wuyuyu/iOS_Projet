@@ -12,8 +12,11 @@ class PokemonDetailsViewController: UIViewController {
     var pokemon: Pokemon! // pokemon chosen from the list
 
 
+    @IBOutlet weak var type2View: UIImageView!
+    @IBOutlet weak var labelType2: UILabel!
+    @IBOutlet weak var type1View: UIImageView!
+    @IBOutlet weak var labelType1: UILabel!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var typeStackView: UIStackView!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var idLabel: UILabel!
     @IBOutlet weak var pokemonNameLabel: UILabel!
@@ -36,6 +39,16 @@ class PokemonDetailsViewController: UIViewController {
               photo.image = UIImage(named: "dragon")
             }
     }
+        setUpPokemonType(type: pokemon.types)
 }
-    private func setUpPokemonType([Type])
+    
+    private var typeImageView : UIImageView!
+    private var typeLabel: UILabel!
+    private func setUpPokemonType(type:[Type]){
+        type1View.image = type[0].getIcon()
+        var index: Int = 0
+           while index <=  type.count {
+           }
+        
+    }
 }
