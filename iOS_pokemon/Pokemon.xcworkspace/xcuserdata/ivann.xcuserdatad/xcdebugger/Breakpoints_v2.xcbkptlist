@@ -187,8 +187,8 @@
             filePath = "Pokemon/Models/Type.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "205"
-            endingLineNumber = "205"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
             landmarkName = "getImmunity()"
             landmarkType = "7">
          </BreakpointContent>
@@ -203,8 +203,8 @@
             filePath = "Pokemon/Models/Type.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "196"
-            endingLineNumber = "196"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
             landmarkName = "getImmunity()"
             landmarkType = "7">
          </BreakpointContent>
@@ -219,8 +219,8 @@
             filePath = "Pokemon/Models/Type.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "188"
-            endingLineNumber = "188"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
             landmarkName = "getImmunity()"
             landmarkType = "7">
          </BreakpointContent>
@@ -235,8 +235,8 @@
             filePath = "Pokemon/Models/Type.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "210"
-            endingLineNumber = "210"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
             landmarkName = "getImmunity()"
             landmarkType = "7">
          </BreakpointContent>
@@ -251,24 +251,8 @@
             filePath = "Pokemon/Models/Type.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "204"
-            endingLineNumber = "204"
-            landmarkName = "getImmunity()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F6677A8F-0B55-4E86-8ED6-763510CCB966"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Pokemon/Models/Type.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "202"
-            endingLineNumber = "202"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
             landmarkName = "getImmunity()"
             landmarkType = "7">
          </BreakpointContent>

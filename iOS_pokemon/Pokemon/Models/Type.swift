@@ -107,7 +107,7 @@ enum Type: String {
     }
     
     func getWeakness() -> [Type]{
-        switch self {
+        switch self{
             case .bug:
                 return [.fire, .rock, .flying]
             case .poison:
@@ -146,13 +146,13 @@ enum Type: String {
     }
     
     func getStength() -> [Type]{
-        switch self {
+        switch self{
             case .bug:
                 return [.fighting, .grass, .ground]
             case .poison:
                 return [.fighting, .fairy, .bug, .grass, .poison]
             case .dragon:
-                return [.dragon, ]
+                return [.dragon]
             case .electric:
                 return [.water, .electric, .fire, .grass]
             case .fairy:
@@ -179,6 +179,8 @@ enum Type: String {
                 return [.fighting, .psychic]
             case .rock:
                 return [.fire, .normal, .poison, .flying]
+            case .normal:
+                return []
             }
     }
     
@@ -196,7 +198,28 @@ enum Type: String {
                 return [.poison]
             case .ground:
                 return [.electric]
+            case .bug:
+                 return []
+             case .poison:
+                 return []
+             case .dragon:
+                 return []
+             case .electric:
+                 return []
+             case .fighting:
+                return []
+             case .fire:
+                 return []
+             case .ice:
+                 return []
+             case .grass:
+                 return []
+             case .water:
+                 return []
+             case .psychic:
+                 return []
+             case .rock:
+                 return []
+             }
         }
-    }
-
 }
