@@ -66,4 +66,43 @@ enum Type: String {
             return UIImage(named :"rock")
         }
     }
+    
+    func getTypeName()->String{
+        switch self{
+        case .bug:
+            return "bug"
+        case . poison:
+            return "poison"
+        case .dragon:
+            return "dragon"
+        case .electrik:
+            return "electric"
+        case .fairy:
+            return "fairy"
+        case .fighting:
+            return "fighting"
+        case .fire:
+            return "fire"
+        case .flying:
+            return "flying"
+        case .ghost:
+            return "ghost"
+        case .steel:
+            return "steel"
+        case .normal:
+            return "normal"
+        case .ice:
+            return "ice"
+        case .ground:
+            return "ground"
+        case .grass:
+            return "grass"
+        case .water:
+            return "water"
+        case .psychic:
+            return "psychic"
+        case .rock:
+            return "rock"
+        }
+    }
 }

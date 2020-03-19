@@ -46,8 +46,11 @@ class PokemonDetailsViewController: UIViewController {
     private var typeLabel: UILabel!
     private func setUpPokemonType(type:[Type]){
     type1View.image = type[0].getIcon()
+    labelType1.text = type[0].getTypeName()
+        labelType2.text = ""
         if type.count > 1 {
             type2View.image = type[1].getIcon()
+            labelType2.text = type[1].getTypeName()
         }
     }
     
