@@ -198,28 +198,8 @@ enum Type: String {
                 return [.poison]
             case .ground:
                 return [.electric]
-            case .bug:
-                 return []
-             case .poison:
-                 return []
-             case .dragon:
-                 return []
-             case .electric:
-                 return []
-             case .fighting:
-                return []
-             case .fire:
-                 return []
-             case .ice:
-                 return []
-             case .grass:
-                 return []
-             case .water:
-                 return []
-             case .psychic:
-                 return []
-             case .rock:
-                 return []
+        default :
+            return []
              }
         }
 }
